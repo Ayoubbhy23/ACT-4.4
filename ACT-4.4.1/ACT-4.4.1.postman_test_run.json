@@ -1,0 +1,147 @@
+{
+	"id": "36a8e3a1-a6c0-455b-aa1d-783d113ddae9",
+	"name": "ACT-4.4.1",
+	"timestamp": "2022-05-30T16:50:33.206Z",
+	"collection_id": "21188682-3052a4f5-c8a4-4683-885e-c5af14770e78",
+	"folder_id": "21188682-9d3b0654-efed-4585-b24a-421965edcb45",
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "93464f74-fe84-4683-8d6c-898f5d07ba99",
+			"name": "GETBy city name",
+			"url": "https://api.openweathermap.org/data/2.5/weather?appid=413d6f2d68929bb918009d95049e69da&q=Tunisia",
+			"time": 525,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": false,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				525
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": false,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "4917dd2f-f8c5-4ca4-8ece-5bca49874dea",
+			"name": "GetBy coordinates",
+			"url": "https://api.openweathermap.org/data/2.5/weather?appid=413d6f2d68929bb918009d95049e69da&lat=41.85&lon=-87.65",
+			"time": 54,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": false,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				54
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": false,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "1ff860e0-ad1e-4a96-ad3b-1dbc8a0b7816",
+			"name": "GetPrévision + 5 jours",
+			"url": "http://api.openweathermap.org/data/2.5/forecast?lat=35&lon=139&appid=413d6f2d68929bb918009d95049e69da&cnt=10",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": false,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": false,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 697,
+	"collection": {
+		"requests": [
+			{
+				"id": "93464f74-fe84-4683-8d6c-898f5d07ba99",
+				"method": "GET"
+			},
+			{
+				"id": "4917dd2f-f8c5-4ca4-8ece-5bca49874dea",
+				"method": "GET"
+			},
+			{
+				"id": "1ff860e0-ad1e-4a96-ad3b-1dbc8a0b7816",
+				"method": "GET"
+			}
+		]
+	}
+}
